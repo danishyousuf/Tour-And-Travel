@@ -1,0 +1,148 @@
+<!-- Full Screen Navbar -->
+<div class="header header_style_one" *ngIf="isFullScreen">
+  <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9">
+    <nav
+      class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5 bg-transparent"
+    >
+      <a routerLink="" class="navbar-brand">
+        <img
+          src="././assets/images/logo.jpeg"
+          alt=""
+          style="
+            width: 150px;
+            height: 150px;
+            border-radius: 16px;
+            margin-top: 10px;
+          "
+        />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        (click)="toggleNavbar()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between px-3"
+        style="margin-right: 10%"
+        [ngClass]="{ show: !isNavbarCollapsed }"
+        id="navbarCollapse"
+      >
+        <div class="navbar-nav ml-auto py-0">
+          <a
+            routerLink=""
+            class="nav-item nav-link"
+            (click)="closeNavbar()"
+            style="font-size: large; color: white"
+            onmouseover="this.style.color='#038cfc'"
+            onmouseout="this.style.color='white'"
+            >Home</a
+          >
+          <a
+            routerLink="/destination"
+            class="nav-item nav-link"
+            (click)="closeNavbar()"
+            style="font-size: large; color: white"
+            onmouseover="this.style.color='#038cfc'"
+            onmouseout="this.style.color='white'"
+            >Destinations</a
+          >
+          <a
+            routerLink="/packages"
+            class="nav-item nav-link"
+            (click)="closeNavbar()"
+            style="font-size: large; color: white"
+            onmouseover="this.style.color='#038cfc'"
+            onmouseout="this.style.color='white'"
+            >Packages</a
+          >
+          <a
+            routerLink="/about"
+            class="nav-item nav-link"
+            (click)="closeNavbar()"
+            style="font-size: large; color: white"
+            onmouseover="this.style.color='#038cfc'"
+            onmouseout="this.style.color='white'"
+            >About</a
+          >
+          <a
+            routerLink="/contact"
+            class="nav-item nav-link"
+            (click)="closeNavbar()"
+            style="font-size: large; color: white"
+            onmouseover="this.style.color='#038cfc'"
+            onmouseout="this.style.color='white'"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- Mobile Screen Navbar -->
+<div
+  class="container-fluid position-relative nav-bar p-0"
+  *ngIf="!isFullScreen"
+>
+  <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9">
+    <nav
+      class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5"
+    >
+      <a routerLink="" class="navbar-brand">
+        <img
+          src="././assets/images/logo.jpeg"
+          alt=""
+          style="width: 50px; height: 70px; border-radius: 12px"
+        />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        (click)="toggleNavbar()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between px-3"
+        [ngClass]="{ show: !isNavbarCollapsed }"
+        id="navbarCollapse"
+      >
+        <div class="navbar-nav ml-auto py-0">
+          <a routerLink="" class="nav-item nav-link" (click)="closeNavbar()"
+            >Home</a
+          >
+          <a
+            routerLink="/destination"
+            class="nav-item nav-link"
+            (click)="closeNavbar()"
+            >Destinations</a
+          >
+          <a
+            routerLink="/packages"
+            class="nav-item nav-link"
+            (click)="closeNavbar()"
+            >Packages</a
+          >
+          <a
+            routerLink="/about"
+            class="nav-item nav-link"
+            (click)="closeNavbar()"
+            >About</a
+          >
+          <a
+            routerLink="/contact"
+            class="nav-item nav-link"
+            (click)="closeNavbar()"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

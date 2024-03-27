@@ -1,0 +1,721 @@
+<!-- Carousel Start -->
+<div class="container-fluid p-0">
+  <div id="header-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          class="d-block w-100"
+          src="{{ bannerimg }}"
+          alt="First slide"
+          style="min-height: 300px; max-height: 700px; object-fit: cover"
+        />
+        <div
+          class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100"
+        >
+          <div class="banner-one_content-inner text-center">
+            <h4 class="banner-one_title" style="font-weight: bolder">
+              FLY EASY TOUR AND TRAVELS
+            </h4>
+            <div class="banner-one_text mt-5" *ngIf="isFullScreen">
+              Embark on an unforgettable journey to Kashmir, where pristine
+              landscapes and rich culture await. From serene Dal Lake to
+              majestic Himalayan peaks, our packages offer the best of Kashmir.
+              Indulge in floating markets, luxurious houseboats, and delectable
+              cuisine for an extraordinary experience. Trust us for personalized
+              service and moments filled with wonder.
+            </div>
+            <a
+              (click)="scrollToContact()"
+              class="btn btn-primary py-md-3 px-md-5 mt-4"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      role="button"
+      data-slide="prev"
+      (click)="prev()"
+    >
+      <div
+        class="btn btn-dark"
+        style="width: 45px; height: 45px; padding-top: 10px"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </div>
+    </a>
+    <a
+      class="carousel-control-next"
+      role="button"
+      data-slide="next"
+      (click)="next()"
+    >
+      <div
+        class="btn btn-dark"
+        style="width: 45px; height: 45px; padding-top: 10px"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </div>
+    </a>
+  </div>
+</div>
+<!-- Carousel End -->
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-lg-6" style="min-height: 500px">
+        <div class="position-relative h-100">
+          <img
+            class="position-absolute w-100 h-100"
+            src="././assets/images/Destinations/gulmarg.avif"
+            style="object-fit: cover; border-radius: 8px"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 pt-5 pb-lg-5">
+        <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            About Us
+          </h6>
+          <h1 class="mb-3">We Provide Best Tour Packages In Your Budget</h1>
+          <p>
+            Discover Kashmir's beauty with our budget-friendly packages - the
+            best in the valley! Contact us now for an unforgettable experience
+            tailored just for you.
+          </p>
+          <div class="row mb-4">
+            <div class="col-6">
+              <img
+                class="img-fluid"
+                src="././assets/images/Destinations/aharbal.avif"
+                alt=""
+                style="border-radius: 8px; height: 150px; width: 250px"
+              />
+            </div>
+            <div class="col-6">
+              <img
+                class="img-fluid"
+                src="././assets/images/Destinations/nishat.avif"
+                alt=""
+                style="border-radius: 8px; height: 150px; width: 250px"
+              />
+            </div>
+          </div>
+          <a
+            class="btn btn-primary mt-1"
+            (click)="scrollToContact()"
+            style="color: White"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End -->
+<!-- Feature Start -->
+<div class="container-fluid">
+  <div class="container pb-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="d-flex mb-4 mb-lg-0">
+          <div
+            class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+            style="height: 100px; width: 200px"
+          >
+            <i class="fa fa-2x fa-money-check-alt text-white"></i>
+          </div>
+          <div class="d-flex flex-column">
+            <h5 class="">Competitive Pricing</h5>
+            <p class="m-0">
+              Experience top-notch budget-friendly packages of kashmir and
+              ladakh with us.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex mb-4 mb-lg-0">
+          <div
+            class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+            style="height: 100px; width: 200px"
+          >
+            <i class="fa fa-2x fa-award text-white"></i>
+          </div>
+          <div class="d-flex flex-column">
+            <h5 class="">Best Services</h5>
+            <p class="m-0">
+              Experience unparalleled service excellence with our premium
+              packages.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex mb-4 mb-lg-0">
+          <div
+            class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+            style="height: 100px; width: 200px"
+          >
+            <i class="fa fa-2x fa-globe text-white"></i>
+          </div>
+          <div class="d-flex flex-column">
+            <h5 class="">Worldwide Coverage</h5>
+            <p class="m-0">
+              Benefit from our worldwide coverage and explore the globe with
+              confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Feature End -->
+
+<!-- Packages Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="text-center mb-3 pb-3">
+      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+        Packages
+      </h6>
+      <h1>Pefect Tour Packages</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white mb-2 mt-2">
+          <img
+            class="img-fluid"
+            src="././assets/images/packages/honeykashmir.jpg"
+            alt=""
+            style="height: 350px; width: 350px; cursor: pointer"
+            routerLink="/singlepackage"
+            (click)="scrollToTop()"
+          />
+          <div class="p-4">
+            <div class="d-flex justify-content-between mb-3">
+              <small class="m-0"
+                ><i class="fa fa-map-marker-alt text-primary mr-2"></i>Honeymoon
+                in Kashmir</small
+              >
+              <small class="m-0"
+                ><i class="fa fa-calendar-alt text-primary mr-2"></i>3
+                days</small
+              >
+            </div>
+            <a
+              class="h5 text-decoration-none"
+              routerLink="/singlepackage"
+              (click)="scrollToTop()"
+              >Discover amazing places of the kashmir with us</a
+            >
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0">
+                  <i class="fa fa-star text-primary mr-2"></i>4.5
+                  <small>(280)</small>
+                </h6>
+                <h5 class="m-0">₹15000</h5>
+              </div>
+              <a
+                class="btn btn-primary mt-1"
+                style="color: White; margin-left: 35%"
+                (click)="scrollToContact()"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white mb-2 mt-2">
+          <img
+            class="img-fluid"
+            src="././assets/images/packages/honeymoonladakh.jpg"
+            alt=""
+            style="height: 350px; width: 350px; cursor: pointer"
+            routerLink="/singlepackage"
+            (click)="scrollToTop()"
+          />
+          <div class="p-4">
+            <div class="d-flex justify-content-between mb-3">
+              <small class="m-0"
+                ><i class="fa fa-map-marker-alt text-primary mr-2"></i>Honeymoon
+                in Ladakh</small
+              >
+              <small class="m-0"
+                ><i class="fa fa-calendar-alt text-primary mr-2"></i>3
+                days</small
+              >
+            </div>
+            <a
+              class="h5 text-decoration-none"
+              routerLink="/singlepackage"
+              (click)="scrollToTop()"
+              >Discover amazing places of the Ladakh with us</a
+            >
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0">
+                  <i class="fa fa-star text-primary mr-2"></i>4.3
+                  <small>(150)</small>
+                </h6>
+                <h5 class="m-0">₹20000</h5>
+              </div>
+              <a
+                class="btn btn-primary mt-1"
+                style="color: White; margin-left: 35%"
+                (click)="scrollToContact()"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white mb-2 mt-2">
+          <img
+            class="img-fluid"
+            src="././assets/images/packages/familykashmir.jpg"
+            alt=""
+            style="height: 350px; width: 350px; cursor: pointer"
+            routerLink="/singlepackage"
+            (click)="scrollToTop()"
+          />
+          <div class="p-4">
+            <div class="d-flex justify-content-between mb-3">
+              <small class="m-0"
+                ><i class="fa fa-map-marker-alt text-primary mr-2"></i>Family
+                trip to kashmir</small
+              >
+              <small class="m-0"
+                ><i class="fa fa-calendar-alt text-primary mr-2"></i>3
+                days</small
+              >
+            </div>
+            <a
+              class="h5 text-decoration-none"
+              routerLink="/singlepackage"
+              (click)="scrollToTop()"
+              >Discover amazing places of the Kashmir with us</a
+            >
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0">
+                  <i class="fa fa-star text-primary mr-2"></i>4.4
+                  <small>(140)</small>
+                </h6>
+                <h5 class="m-0">₹30000</h5>
+              </div>
+              <a
+                class="btn btn-primary mt-1"
+                style="color: White; margin-left: 35%"
+                (click)="scrollToContact()"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white mb-2 mt-2">
+          <img
+            class="img-fluid"
+            src="././assets/images/packages/amarnath.webp"
+            alt=""
+            style="height: 350px; width: 350px; cursor: pointer"
+            routerLink="/singlepackage"
+            (click)="scrollToTop()"
+          />
+          <div class="p-4">
+            <div class="d-flex justify-content-between mb-3">
+              <small class="m-0"
+                ><i class="fa fa-map-marker-alt text-primary mr-2"></i>Amarnath
+                Yatra</small
+              >
+              <small class="m-0"
+                ><i class="fa fa-calendar-alt text-primary mr-2"></i>7
+                days</small
+              >
+            </div>
+            <a
+              class="h5 text-decoration-none"
+              routerLink="/singlepackage"
+              (click)="scrollToTop()"
+              >Visit the sacred place like Amarnath Yatra with us.</a
+            >
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0">
+                  <i class="fa fa-star text-primary mr-2"></i>4.6
+                  <small>(114)</small>
+                </h6>
+                <h5 class="m-0">₹25000</h5>
+              </div>
+              <a
+                class="btn btn-primary mt-1"
+                style="color: White; margin-left: 35%"
+                (click)="scrollToContact()"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white mb-2 mt-2">
+          <img
+            class="img-fluid"
+            src="././assets/images/packages/solokashmir.jpg"
+            alt=""
+            style="height: 350px; width: 350px; cursor: pointer"
+            routerLink="/singlepackage"
+            (click)="scrollToTop()"
+          />
+          <div class="p-4">
+            <div class="d-flex justify-content-between mb-3">
+              <small class="m-0"
+                ><i class="fa fa-map-marker-alt text-primary mr-2"></i>Solo trip
+                to Kashmir</small
+              >
+              <small class="m-0"
+                ><i class="fa fa-calendar-alt text-primary mr-2"></i>7
+                days</small
+              >
+            </div>
+            <a
+              class="h5 text-decoration-none"
+              routerLink="/singlepackage"
+              (click)="scrollToTop()"
+              >Discover amazing places of the kashmir with us</a
+            >
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0">
+                  <i class="fa fa-star text-primary mr-2"></i>4.5
+                  <small>(250)</small>
+                </h6>
+                <h5 class="m-0">₹25000</h5>
+              </div>
+              <a
+                class="btn btn-primary mt-1"
+                style="color: White; margin-left: 35%"
+                (click)="scrollToContact()"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white mb-2 mt-2">
+          <img
+            class="img-fluid"
+            src="././assets/images/packages/alpine.jpg"
+            alt=""
+            style="height: 350px; width: 350px; cursor: pointer"
+            routerLink="/singlepackage"
+            (click)="scrollToTop()"
+          />
+          <div class="p-4">
+            <div class="d-flex justify-content-between mb-3">
+              <small class="m-0"
+                ><i class="fa fa-map-marker-alt text-primary mr-2"></i>Alpine
+                Lakes</small
+              >
+              <small class="m-0"
+                ><i class="fa fa-calendar-alt text-primary mr-2"></i>9
+                days</small
+              >
+            </div>
+            <a
+              class="h5 text-decoration-none"
+              routerLink="/singlepackage"
+              (click)="scrollToTop()"
+              >Discover amazing lakes of kashmir with us.</a
+            >
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0">
+                  <i class="fa fa-star text-primary mr-2"></i>4.5
+                  <small>(79)</small>
+                </h6>
+                <h5 class="m-0">₹40000</h5>
+              </div>
+              <a
+                class="btn btn-primary mt-1"
+                style="color: White; margin-left: 35%"
+                (click)="scrollToContact()"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Packages End -->
+
+<!-- quality one -->
+<section class="mb-2">
+  <div class="auto-container">
+    <!-- Title Box -->
+    <div class="text-center mb-3 pb-3">
+      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+        WHY TO CHOOSE US
+      </h6>
+      <h1>Why to choose FLY EASY</h1>
+    </div>
+
+    <div class="row clearfix mt-4">
+      <!-- Title Column -->
+      <div class="quality-one_title-column col-lg-4 col-md-12 col-sm-12">
+        <div class="quality-one_title-inner">
+          <h1 class="quality-one_title">
+            Only The <br />
+            Best Quality For You
+          </h1>
+          <div class="quality-one_text">
+            From Planning to Post-Trip Follow-Up, we have all the best services
+            special for you. Take a look at our numbers for our credibility.
+          </div>
+        </div>
+      </div>
+      <!-- Counter Column -->
+      <div class="quality-one_counter-column col-lg-8 col-md-12 col-sm-12">
+        <div class="quality-one_counter-inner">
+          <div class="quality-one_counter-image">
+            <img
+              src="././assets/images/homepage-images/qualityone.avif"
+              style="height: 500px"
+              alt=""
+            />
+          </div>
+
+          <div class="quality-one_counter-box">
+            <!-- Counter Column -->
+            <div class="counter-one_block">
+              <div
+                class="counter-one_block-inner wow flipInX animated"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+                style="
+                  visibility: visible;
+                  animation-duration: 1500ms;
+                  animation-delay: 0ms;
+                  animation-name: flipInX;
+                "
+              >
+                <div class="counter-one_counter">
+                  <span class="odometer odometer-auto-theme" data-count="20"
+                    ><div class="odometer-inside">
+                      <span class="odometer-value">5+</span>
+                    </div></span
+                  >
+                </div>
+                <div class="counter-one_counter-text">years of experience</div>
+              </div>
+            </div>
+
+            <!-- Counter Column -->
+            <div class="counter-one_block">
+              <div
+                class="counter-one_block-inner wow flipInX animated"
+                data-wow-delay="150ms"
+                data-wow-duration="1500ms"
+                style="
+                  visibility: visible;
+                  animation-duration: 1500ms;
+                  animation-delay: 150ms;
+                  animation-name: flipInX;
+                "
+              >
+                <div class="counter-one_counter">
+                  <span class="odometer odometer-auto-theme" data-count="20"
+                    ><div class="odometer-inside">
+                      <span class="odometer-value">50+</span>
+                    </div></span
+                  >
+                </div>
+                <div class="counter-one_counter-text">destinations</div>
+              </div>
+            </div>
+
+            <!-- Counter Column -->
+            <div class="counter-one_block">
+              <div
+                class="counter-one_block-inner wow flipInX animated"
+                data-wow-delay="300ms"
+                data-wow-duration="1500ms"
+                style="
+                  visibility: visible;
+                  animation-duration: 1500ms;
+                  animation-delay: 300ms;
+                  animation-name: flipInX;
+                "
+              >
+                <div class="counter-one_counter">
+                  <span class="odometer odometer-auto-theme" data-count="20"
+                    ><div class="odometer-inside">
+                      <span class="odometer-value">5+</span>
+                    </div></span
+                  >
+                </div>
+                <div class="counter-one_counter-text">
+                  tour &amp; travel awards
+                </div>
+              </div>
+            </div>
+
+            <!-- Counter Column -->
+            <div class="counter-one_block">
+              <div
+                class="counter-one_block-inner wow flipInX animated"
+                data-wow-delay="450ms"
+                data-wow-duration="1500ms"
+                style="
+                  visibility: visible;
+                  animation-duration: 1500ms;
+                  animation-delay: 450ms;
+                  animation-name: flipInX;
+                "
+              >
+                <div class="counter-one_counter">
+                  <span class="odometer odometer-auto-theme" data-count="20"
+                    ><div class="odometer-inside">
+                      <span class="odometer-value">5000+</span>
+                    </div></span
+                  >
+                </div>
+                <div class="counter-one_counter-text">delighted clients</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- quality one -->
+
+<!-- Book Now -->
+
+<div
+  class="container-fluid booking py-5"
+  style="background-image: url(././assets/images/booknow.avif)"
+  #contactSection
+>
+  <div class="container py-5">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <h5 class="section-booking-title pe-3 text-white">Booking--</h5>
+        <h1 class="text-white mb-4">Online Booking</h1>
+        <p class="text-white mb-4">
+          Discover the beauty of Kashmir with Fly Easy, your ultimate
+          destination for budget-friendly tours. Explore breathtaking landscapes
+          and cultural wonders with our solo and family packages. Book now to
+          unlock unforgettable experiences in the Valley of Kashmir.
+        </p>
+        <p class="text-white mb-4" *ngIf="showExtra === true">
+          Experience the enchanting allure of Kashmir with Fly Easy, renowned
+          for offering the best and most affordable tour and travel services in
+          the region. Whether you're seeking a solo adventure or planning a
+          family getaway, our meticulously crafted packages cater to every
+          traveler's needs.
+        </p>
+        <a
+          (click)="toggleContent()"
+          class="btn btn-primary py-md-3 px-md-5 mt-4 text-white"
+          >{{ buttonText }}</a
+        >
+      </div>
+      <div class="col-lg-6">
+        <h1 class="text-white mb-3">Book A Tour Deals</h1>
+        <p class="text-white mb-4">
+          Get <span class="text-warning">50% Off</span> On Your First Adventure
+          Trip With FLY EASY. Get More Deal Offers Here.
+        </p>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6 mt-2">
+              <div class="form-floating">
+                <label for="name" class="text-white">Your Name:</label>
+                <input
+                  type="text"
+                  class="form-control bg-white border-0"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="form-floating">
+                <label for="name" class="text-white">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control bg-white border-0"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div
+                class="form-floating date"
+                id="date3"
+                data-target-input="nearest"
+              >
+                <label for="name" class="text-white">Arrival Date</label>
+                <input
+                  type="text"
+                  class="form-control bg-white border-0"
+                  id="datetime"
+                  placeholder="Date &amp; Time"
+                  data-target="#date3"
+                  data-toggle="datetimepicker"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="form-floating">
+                <label for="name" class="text-white">Number Of Persons</label>
+                <input
+                  type="number"
+                  class="form-control bg-white border-0"
+                  id="email"
+                  placeholder="Number Of Persons"
+                />
+              </div>
+            </div>
+            <div class="col-12 mt-5">
+              <div class="form-floating">
+                <label for="message" class="text-white">Special Message</label>
+                <textarea
+                  class="form-control bg-white border-0"
+                  placeholder="Special Message"
+                  id="message"
+                  style="height: 100px"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-12 mt-2">
+              <button
+                class="btn btn-primary text-white w-100 py-3"
+                type="submit"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Book Now -->
